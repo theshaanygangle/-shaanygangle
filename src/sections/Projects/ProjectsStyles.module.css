@@ -14,26 +14,60 @@
     width: fit-content;
     text-decoration: none;
     color: #222;
-    transition: transform 200ms ease-in-out;
   }
 
-  a:hover {
-    transform: scale(1.05);
-  }
+  
 }
 
-.projectsContainer {
+.projectCard {
+  transition: transform 200ms ease-in-out;
+  max-width :min-content;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.projectCard:hover{
+  transform: scale(1.02);
+}
+
+
+.projectDetails {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  justify-content: space-between;
+  margin-top: 2.5px;
 }
 
-@media (width >= 800px) {
-  .projectsContainer {
+.sourceLink {
+  margin-top: 2px;
+  width: 25px;
+}
+
+.detailesText {
+  text-align: left;
+}
+
+
+
+@media (width >=800px) {
+  .projectcardsContainer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 30px;
-  }
+  } 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
